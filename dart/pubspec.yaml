@@ -1,6 +1,6 @@
 name: apiverve_benchmarkrate
 description: Benchmark Rate is a tool for retrieving current risk-free reference rates that replaced LIBOR. It returns rates for SOFR (US), SONIA (UK), ESTR (EU), TONA (Japan), and SARON (Switzerland).
-version: 1.1.13
+version: 1.1.14
 homepage: https://apiverve.com/marketplace/benchmarkrate?utm_source=dart&utm_medium=homepage
 repository: https://github.com/apiverve/benchmarkrate-api/tree/main/dart
 
