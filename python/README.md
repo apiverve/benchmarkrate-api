@@ -223,8 +223,9 @@ from apiverve_benchmarkrate.apiClient import BenchmarkrateAPIClient
 
 api = BenchmarkrateAPIClient("[YOUR_API_KEY]")
 
+query = { "rate": "SOFR" }
+
 try:
-    query = { "rate": "SOFR" }
     result = api.execute(query)
     print(result)
 finally:
