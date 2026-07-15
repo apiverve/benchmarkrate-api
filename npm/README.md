@@ -7,7 +7,7 @@ Benchmark Rate is a tool for retrieving current risk-free reference rates that r
 ![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 [![npm version](https://img.shields.io/npm/v/@apiverve/benchmarkrate.svg)](https://www.npmjs.com/package/@apiverve/benchmarkrate)
 
-This is a Javascript Wrapper for the [Benchmark Rate API](https://apiverve.com/marketplace/benchmarkrate?utm_source=npm&utm_medium=readme)
+This is a Javascript Wrapper for the [Benchmark Rate API](https://benchmarkrate.apiverve.com?utm_source=npm&utm_medium=readme)
 
 ---
 
@@ -127,9 +127,13 @@ async function makeRequest() {
     "currency": "USD",
     "region": "United States",
     "administrator": "Federal Reserve Bank of New York",
-    "value": 3.65,
+    "value": 4.32,
     "date": "2026-02-04",
-    "lastUpdated": "2026-02-05T05:00:00.000Z"
+    "lastUpdated": "2026-02-05T05:00:00.000Z",
+    "change1d": -0.01,
+    "changeDirection": "down",
+    "previousValue": 4.33,
+    "previousDate": "2026-02-03"
   }
 }
 ```
