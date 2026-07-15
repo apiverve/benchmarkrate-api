@@ -56,9 +56,13 @@ paths:
                   currency: USD
                   region: United States
                   administrator: Federal Reserve Bank of New York
-                  value: 3.65
+                  value: 4.32
                   date: '2026-02-04'
                   lastUpdated: '2026-02-05T05:00:00.000Z'
+                  change1d: -0.01
+                  changeDirection: down
+                  previousValue: 4.33
+                  previousDate: '2026-02-03'
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
