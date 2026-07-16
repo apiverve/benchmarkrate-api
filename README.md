@@ -191,11 +191,39 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Benchmark Rate API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "rate": "SOFR",
+    "name": "Secured Overnight Financing Rate",
+    "currency": "USD",
+    "region": "United States",
+    "administrator": "Federal Reserve Bank of New York",
+    "value": 4.32,
+    "date": "2026-02-04",
+    "lastUpdated": "2026-02-05T05:00:00.000Z",
+    "change1d": -0.01,
+    "changeDirection": "down",
+    "previousValue": 4.33,
+    "previousDate": "2026-02-03"
+  }
 }
 ```
 
