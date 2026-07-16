@@ -25,6 +25,9 @@ namespace APIVerve.API.BenchmarkRate
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -45,12 +48,36 @@ namespace APIVerve.API.BenchmarkRate
         public string Administrator { get; set; }
 
         [JsonProperty("value")]
-        public double Value { get; set; }
+        public double? Value { get; set; }
 
         [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
+        public DateTimeOffset? Date { get; set; }
 
         [JsonProperty("lastUpdated")]
-        public DateTimeOffset LastUpdated { get; set; }
+        public DateTimeOffset? LastUpdated { get; set; }
+
+        [JsonProperty("change1d")]
+        public double? Change1D { get; set; }
+
+        [JsonProperty("changeDirection")]
+        public string ChangeDirection { get; set; }
+
+        [JsonProperty("previousValue")]
+        public double? PreviousValue { get; set; }
+
+        [JsonProperty("previousDate")]
+        public DateTimeOffset? PreviousDate { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
