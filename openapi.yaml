@@ -2,9 +2,10 @@ openapi: 3.0.4
 info:
   title: Benchmark Rate
   description: >-
-    Benchmark Rate is a tool for retrieving current risk-free reference rates
-    that replaced LIBOR. It returns rates for SOFR (US), SONIA (UK), ESTR (EU),
-    TONA (Japan), and SARON (Switzerland).
+    Benchmark Rate retrieves current risk-free reference rates across major
+    currencies, covering SOFR, SONIA, ESTR, TONA, and SARON. Pass a rate symbol
+    to receive the latest percentage rate, effective date, currency, region, and
+    daily change direction.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -19,7 +20,7 @@ servers:
 paths:
   /v1/benchmarkrate:
     get:
-      summary: Get Benchmark Rate
+      summary: Benchmark Rate
       description: Get the current value for a specific benchmark rate.
       operationId: benchmarkrate
       parameters:
