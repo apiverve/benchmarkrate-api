@@ -1,13 +1,12 @@
 Benchmark Rate API
 ============
 
-Benchmark Rate is a tool for retrieving current risk-free reference rates that replaced LIBOR. It returns rates for SOFR (US), SONIA (UK), ESTR (EU), TONA (Japan), and SARON (Switzerland).
+Benchmark Rate retrieves current risk-free reference rates across major currencies, covering SOFR, SONIA, ESTR, TONA, and SARON. Pass a rate symbol to receive the latest percentage rate, effective date, currency, region, and daily change direction.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Benchmark Rate API](https://apiverve.com/marketplace/benchmarkrate?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-benchmarkrate.svg)](https://pypi.org/project/apiverve-benchmarkrate/)
+
+This is a Python wrapper for the [Benchmark Rate API](https://apiverve.com/marketplace/benchmarkrate?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-benchmarkrate
 
 ## Configuration
 
-Before using the benchmarkrate API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Benchmark Rate API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The Benchmark Rate API documentation is found here: [https://docs.apiverve.com/ref/benchmarkrate](https://docs.apiverve.com/ref/benchmarkrate?utm_source=pypi&utm_medium=readme).
+The Benchmark Rate API documentation is found here: [https://docs.apiverve.com/ref/benchmarkrate](https://docs.apiverve.com/ref/benchmarkrate?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -107,9 +106,13 @@ print(result)
     "currency": "USD",
     "region": "United States",
     "administrator": "Federal Reserve Bank of New York",
-    "value": 3.65,
+    "value": 4.32,
     "date": "2026-02-04",
-    "lastUpdated": "2026-02-05T05:00:00.000Z"
+    "lastUpdated": "2026-02-05T05:00:00.000Z",
+    "change1d": -0.01,
+    "changeDirection": "down",
+    "previousValue": 4.33,
+    "previousDate": "2026-02-03"
   }
 }
 ```
@@ -237,7 +240,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -248,12 +251,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
