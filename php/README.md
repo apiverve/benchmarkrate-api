@@ -1,6 +1,6 @@
 # Benchmark Rate API - PHP Package
 
-Benchmark Rate is a tool for retrieving current risk-free reference rates that replaced LIBOR. It returns rates for SOFR (US), SONIA (UK), ESTR (EU), TONA (Japan), and SARON (Switzerland).
+Benchmark Rate retrieves current risk-free reference rates across major currencies, covering SOFR, SONIA, ESTR, TONA, and SARON. Pass a rate symbol to receive the latest percentage rate, effective date, currency, region, and daily change direction.
 
 ## Installation
 
@@ -92,11 +92,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/benchmarkrate?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/benchmarkrate?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://benchmarkrate.apiverve.com?utm_source=php&utm_medium=readme](https://benchmarkrate.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/benchmarkrate?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/benchmarkrate?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

@@ -1,7 +1,7 @@
 {
     "name": "apiverve/benchmarkrate",
-    "description": "Benchmark Rate is a tool for retrieving current risk-free reference rates that replaced LIBOR. It returns rates for SOFR (US), SONIA (UK), ESTR (EU), TONA (Japan), and SARON (Switzerland).",
-    "version": "1.2.0",
+    "description": "Benchmark Rate retrieves current risk-free reference rates across major currencies, covering SOFR, SONIA, ESTR, TONA, and SARON. Pass a rate symbol to receive the latest percentage rate, effective date, currency, region, and daily change direction.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -21,7 +21,7 @@
         "estr",
         "tona"
     ],
-    "homepage": "https://benchmarkrate.apiverve.com?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/benchmarkrate?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/benchmarkrate",
