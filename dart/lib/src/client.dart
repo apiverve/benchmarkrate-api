@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Benchmark Rate API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/benchmarkrate?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/benchmarkrate?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [rate] (required) - The benchmark rate to retrieve

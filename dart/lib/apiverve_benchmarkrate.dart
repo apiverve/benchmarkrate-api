@@ -1,8 +1,8 @@
 /// Benchmark Rate API client for Dart/Flutter
 ///
-/// Benchmark Rate is a tool for retrieving current risk-free reference rates that replaced LIBOR. It returns rates for SOFR (US), SONIA (UK), ESTR (EU), TONA (Japan), and SARON (Switzerland).
+/// Benchmark Rate retrieves current risk-free reference rates across major currencies, covering SOFR, SONIA, ESTR, TONA, and SARON. Pass a rate symbol to receive the latest percentage rate, effective date, currency, region, and daily change direction.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/benchmarkrate?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/benchmarkrate?utm_source=dart&utm_medium=referral&utm_content=readme
 library apiverve_benchmarkrate;
 
 export 'src/client.dart';
