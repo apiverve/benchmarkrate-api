@@ -1,6 +1,6 @@
 name: apiverve_benchmarkrate
 description: "Benchmark Rate retrieves current risk-free reference rates across major currencies, covering SOFR, SONIA, ESTR, TONA, and SARON. Pass a rate symbol to receive the latest percentage rate, effective date, currency, region, and daily change direction."
-version: 1.2.4
+version: 1.2.5
 homepage: https://apiverve.com/marketplace/benchmarkrate?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/benchmarkrate-api/tree/main/dart
 
